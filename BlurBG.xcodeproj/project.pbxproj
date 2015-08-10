@@ -14,6 +14,9 @@
 		DDCA0A3F1B78495F006B52D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCA0A3E1B78495F006B52D3 /* Images.xcassets */; };
 		DDCA0A421B78495F006B52D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDCA0A401B78495F006B52D3 /* LaunchScreen.xib */; };
 		DDCA0A4E1B78495F006B52D3 /* BlurBGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCA0A4D1B78495F006B52D3 /* BlurBGTests.m */; };
+		DDCA0A5C1B78496E006B52D3 /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCA0A591B78496E006B52D3 /* UIColor+Theme.m */; };
+		DDCA0A5D1B78496E006B52D3 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCA0A5B1B78496E006B52D3 /* UIImage+ImageEffects.m */; };
+		DDCA0A601B7849BC006B52D3 /* BlurBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCA0A5F1B7849BC006B52D3 /* BlurBackground.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		DDCA0A471B78495F006B52D3 /* BlurBGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurBGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCA0A4C1B78495F006B52D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDCA0A4D1B78495F006B52D3 /* BlurBGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurBGTests.m; sourceTree = "<group>"; };
+		DDCA0A581B78496E006B52D3 /* UIColor+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Theme.h"; sourceTree = "<group>"; };
+		DDCA0A591B78496E006B52D3 /* UIColor+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Theme.m"; sourceTree = "<group>"; };
+		DDCA0A5A1B78496E006B52D3 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		DDCA0A5B1B78496E006B52D3 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		DDCA0A5E1B7849BC006B52D3 /* BlurBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurBackground.h; sourceTree = "<group>"; };
+		DDCA0A5F1B7849BC006B52D3 /* BlurBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurBackground.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		DDCA0A301B78495F006B52D3 /* BlurBG */ = {
 			isa = PBXGroup;
 			children = (
+				DDCA0A571B78496E006B52D3 /* ImageBlur */,
 				DDCA0A351B78495F006B52D3 /* AppDelegate.h */,
 				DDCA0A361B78495F006B52D3 /* AppDelegate.m */,
 				DDCA0A381B78495F006B52D3 /* ViewController.h */,
@@ -117,6 +127,19 @@
 				DDCA0A4C1B78495F006B52D3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDCA0A571B78496E006B52D3 /* ImageBlur */ = {
+			isa = PBXGroup;
+			children = (
+				DDCA0A581B78496E006B52D3 /* UIColor+Theme.h */,
+				DDCA0A591B78496E006B52D3 /* UIColor+Theme.m */,
+				DDCA0A5A1B78496E006B52D3 /* UIImage+ImageEffects.h */,
+				DDCA0A5B1B78496E006B52D3 /* UIImage+ImageEffects.m */,
+				DDCA0A5E1B7849BC006B52D3 /* BlurBackground.h */,
+				DDCA0A5F1B7849BC006B52D3 /* BlurBackground.m */,
+			);
+			path = ImageBlur;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDCA0A3A1B78495F006B52D3 /* ViewController.m in Sources */,
+				DDCA0A5D1B78496E006B52D3 /* UIImage+ImageEffects.m in Sources */,
+				DDCA0A5C1B78496E006B52D3 /* UIColor+Theme.m in Sources */,
 				DDCA0A371B78495F006B52D3 /* AppDelegate.m in Sources */,
+				DDCA0A601B7849BC006B52D3 /* BlurBackground.m in Sources */,
 				DDCA0A341B78495F006B52D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

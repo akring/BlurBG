@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlurBackground.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    
+    BlurBackground *bg;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
