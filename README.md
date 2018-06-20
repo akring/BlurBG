@@ -4,7 +4,7 @@
 
 Show blur layer when your app is in iOS multitask center
 
-###Install
+### Install
 
 * 将`ImageBlur`文件夹拖入你的项目中
 
@@ -14,7 +14,7 @@ Show blur layer when your app is in iOS multitask center
 
   Add `#import "BlurBackground.h"`to `Appdelegate.h`.
 
-###How to use
+### How to use
 
 * 在`applicationWillResignActive`方法中,调用`addBluredBackground:(UIWindow *)window`即可添加毛玻璃层
 
@@ -28,6 +28,6 @@ Show blur layer when your app is in iOS multitask center
 
 For more details,view the Demo code.
 
-###Preview
+### Preview
 
 ![PNG](http://7te7sy.com1.z0.glb.clouddn.com/Blur_Image_PNG.png)
